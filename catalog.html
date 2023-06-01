@@ -28,8 +28,8 @@
       </nav>
     </header>
 
-  <main class="main-inner">
-    <header class="inner-header">
+  <main">
+    <section class="filter-price">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -38,18 +38,18 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
       </ul>
-    </header>
 
-    <section class="filter-price">
       <form class="filter-infrastructure" action="https://echo.htmlacademy.ru/" method="get">
         <h2 class="visually-hidden">перечень дополнительных опций места проживания</h2>
         <fieldset class="filter-infrastructure-option">
           <legend class="filter-title">Инфраструктура:</legend>
           <ul class="filter-infrastructure-list">
             <li class="filter-infrastructure-item">
-            <label><input type="checkbox" name="whaterpool" checked>Бассейн</label></li>
-            <li class="filter-infrastructure-item"><label><input type="checkbox" name="parking" checked>Парковка</label></li>
-            <li class="filter-infrastructure-item"><label><input type="checkbox" name="wifi">Wi-Fi</label></li>
+              <label><input type="checkbox" name="whaterpool" checked>Бассейн</label></li>
+            <li class="filter-infrastructure-item">
+              <label><input type="checkbox" name="parking" checked>Парковка</label></li>
+            <li class="filter-infrastructure-item">
+              <label><input type="checkbox" name="wifi">Wi-Fi</label></li>
         </fieldset>
 
         <fieldset class="filter-infrastructure-type">
@@ -62,64 +62,77 @@
             <li class="filter-infrastructure-item">
               <label><input type="radio" name="housing-group" value="apartaments">Апартаменты</label></li>
         </fieldset>
-      </form>
 
-      <form class="price" action="https://echo.htmlacademy.ru/" method="get">
         <p class="filter-title">Стоимость, ₽:</p>
         <label><input type="number" name="min-price" min="0" max="9000" step="100" placeholder="от" value="0">от</label>
         <label><input type="number" name="max-price" min="0" max="9000" step="100" placeholder="до" value="0">до</label>
         <input type="range" name="slider" min="0" max="9000">
+      <button type="submit" class="button button-favourites">Применить</button>
+      <button type="submit" сlass="button button-cancel">Сбросить</button>
       </form>
-      <button class="button button-favourites">Применить</button>
-      <button vlass="button button-cancel">Сбросить</button>
     </section>
+
+    <!-- ФОРМА ВЫШЕ (в section class="filter-price") СОСТАВЛЕНА ПРАВИЛЬНО? Я ОБЪЕДИНИЛ В ОДНУ ФОРМУ НИЖНЮЮ ЧАСТЬ К ОСТАЛЬНЫМ? РАНЕЕ ШЛА ОТДЕЛЬНОЙ ФОРМОЙ. ОБОРАЧИВАТЬ ПОСЛЕДНЮЮ ЧАСТЬ "СТОИМОСТЬ" НИ ВО ЧТО НЕ НАДО?-->
 
     <section class="catalog-hotels">
       <h2 class="visually-hidden">каталог гостиниц, подходящих под выбранные параметры</h2>
-      <span>Найдено гостиниц: <span class="finded">38</span></span>
-      <select class="select-sorting">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
-      <a class="layout-icons" href="#"><span class="visually-hidden">отображение вариантов гостиницы плиткой</span></a>
-      <a class="layout-icons" href="#"><span class="visually-hidden">отображение вариантов гостиницы по одной на страницу</span></a>
-      <a class="layout-icons" href="#"><span class="visually-hidden">отображение вариантов гостиницы списком</span></a>
+      <div class="hotels-choice">
+        <span>Найдено гостиниц: <b>38</b></span>
+        <div class="hotels-sort">
+          <select class="select-sorting" aria-label="сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="sort-button-list">
+            <li class="sort-button-item">
+              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы плиткой</span></button>
+            </li>
+            <li class="sort-button-item">
+              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы по одной на страницу</span></button>
+            </li>
+            <li class="sort-button-item">
+              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы списком</span></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <ul class="hotels-list">
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="#" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Amara Resort & Spa</h3></a>
-          <span>Гостиница От 4000 ₽</span>
+          <span>Гостиница От <i>4000</i> ₽</span>
           <a class="hotels-link" href="#"><b>подробнее</b></a>
           <button class="button button-favourites"><b>в избранное</b></button>
           <span class="rating rating-visually-hidden">hotel rating stars</span>
-          <span class="rating-total rating-total-visually-hidden">Рейтинг: 8,5</span>
+          <span class="rating-total rating-total-visually-hidden">Рейтинг: <b>8,5</b></span>
         </li>
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="#" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Villas at Poco Diablo</h3></a>
-          <span>Гостиница От 5000 ₽</span>
+          <span>Гостиница От <i>5000</i> ₽</span>
           <a class="hotels-link" href="#"><b>подробнее</b></a>
           <button class="button button-favourites"><b>в избранное</b></button>
           <span class="rating rating-visually-hidden">hotel rating stars</span>
-          <span class="rating-total rating-total-visually-hidden">Рейтинг: 9,02</span>
+          <span class="rating-total rating-total-visually-hidden">Рейтинг: <b>9,02</b></span>
         </li>
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="#" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Desert Quail Inn</h3></a>
-          <span>Гостиница От 2500 ₽</span>
+          <span>Гостиница От <i>2500</i> ₽</span>
           <a class="hotels-link" href="#"><b>подробнее</b></a>
           <button class="button button-favourites"><b>в избранное</b></button>
           <span class="rating rating-visually-hidden">hotel rating stars</span>
-          <span class="rating-total rating-total-visually-hidden">Рейтинг: 6,9</span>
+          <span class="rating-total rating-total-visually-hidden">Рейтинг: <b>6,9</b></span>
         </li>
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="#" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">GreenTree Inn</h3></a>
-          <span>Гостиница От 1500 ₽</span>
+          <span>Гостиница От <i>1500</i> ₽</span>
           <a class="hotels-link" href="#"><b>подробнее</b></a>
           <button class="button button-favourites"><b>в избранное</b></button>
           <span class="rating rating-visually-hidden">hotel rating stars</span>
-          <span class="rating-total rating-total-visually-hidden">Рейтинг: 5,0</span>
+          <span class="rating-total rating-total-visually-hidden">Рейтинг: <b>5,0</b></span>
         </li>
       </ul>
       <ul class="pagination-list">
