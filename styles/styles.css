@@ -1,0 +1,31 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+nav ul, .user-list {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0088cc;
+}
+
+li .search {
+  background-image: url(../img/icons/icon-search.svg);
+  background-repeat: no-repeat;
+  padding: 22px;
+}
+
+.hero {
+  background-image: url(../img/hero-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* <img class="hero-image" src="./img/hero-background.jpg"   alt="Фото пейзажа Седоны"> */
