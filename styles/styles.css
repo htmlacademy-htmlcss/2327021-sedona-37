@@ -1,31 +1,143 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
 }
 
-nav ul, .user-list {
-    text-decoration: none;
-    list-style: none;
+.visually-hidden {
+  position:absolute;
+  visibility: hidden;
 }
 
-a {
+.navigation-list, .user-list {
   text-decoration: none;
+  list-style: none;
 }
 
-a:hover {
-  color: #0088cc;
+.navigation-list {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
 }
 
-li .search {
+
+.user-item .search {
   background-image: url(../img/icons/icon-search.svg);
   background-repeat: no-repeat;
   padding: 22px;
 }
 
+.user-item .likes {
+  background-image: url(../img/icons/icon-favourites.svg);
+  background-repeat: no-repeat;
+  padding: 22px;
+}
+
+.user-item .button-registration {
+font-family: inherit;
+color: #ffffff;
+background-color: #756157;
+font-family: 'PT Sans';
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+}
+
 .hero {
+  background-color: blue ;
   background-image: url(../img/hero-background.jpg);
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
-/* <img class="hero-image" src="./img/hero-background.jpg"   alt="Фото пейзажа Седоны"> */
+
+.devider {
+  background-image: url(../img/hero-devider.svg);
+  background-repeat: no-repeat;
+}
+
+.welcome .subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*
+.advantages {
+  font-weight: 400;
+}
+*/
+
+.advantages-item, .residence-item {
+text-align: center;
+}
+
+.advatnages-item p {
+  line-height: 21px;
+}
+
+.advatnages-titles, .residence-titles {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+}
+
+.advantages-titles-white {
+  color: #ffffff;
+}
+
+.residence .subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.residence-item p {
+  line-height: 21px;
+}
+
+
+
+/*
+a {
+  text-decoration: none;
+}
+
+
+  background-color: #82B3D3;
+
+a:hover {
+  color: #0088cc;
+}
+
+*/
