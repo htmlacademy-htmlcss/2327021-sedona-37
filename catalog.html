@@ -18,12 +18,12 @@
           <li class="navigation-item">
             <a class="navigation-link navigation-link--active" href="#">Гостиницы</a></li>
         </ul>
-        <ul Class="navigation-user-list">
-          <li class="navigation-user-item">
+        <ul Class="user-list">
+          <li class="user-item">
             <a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation-user-item">
+          <li class="user-item">
             <a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12<b></a></li>
-          <li class="navigation-user-item">
+          <li class="user-item">
             <button class="button button-registration">ХОЧУ СЮДА!</button></li>
         </ul>
       </nav>
@@ -33,14 +33,14 @@
     <section class="filter-price">
       <h1 class="inner-page-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную страницу</span></a>
+        <li class="breadcrumbs-item-home">
+          <a class="breadcrumbs-link breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную страницу</span></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
       </ul>
 
-      <form class="filter-infrastructure" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filter-infrastructure-form" action="https://echo.htmlacademy.ru/" method="get">
         <h2 class="visually-hidden">перечень дополнительных опций места проживания</h2>
         <fieldset class="filter-infrastructure-option">
           <legend class="filter-title">Инфраструктура:</legend>
@@ -73,12 +73,12 @@
       </form>
     </section>
 
-    <!-- ФОРМА ВЫШЕ (в section class="filter-price") СОСТАВЛЕНА ПРАВИЛЬНО? Я ОБЪЕДИНИЛ В ОДНУ ФОРМУ НИЖНЮЮ ЧАСТЬ К ОСТАЛЬНЫМ? РАНЕЕ ШЛА ОТДЕЛЬНОЙ ФОРМОЙ. ОБОРАЧИВАТЬ ПОСЛЕДНЮЮ ЧАСТЬ "СТОИМОСТЬ" НИ ВО ЧТО НЕ НАДО?-->
+
 
     <section class="catalog-hotels">
       <h2 class="visually-hidden">каталог гостиниц, подходящих под выбранные параметры</h2>
       <div class="hotels-choice">
-        <span>Найдено гостиниц: <b>38</b></span>
+        <span class="subtitle">Найдено гостиниц:<b>38</b></span>
         <div class="hotels-sort">
           <select class="select-sorting" aria-label="сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -86,13 +86,13 @@
           </select>
           <ul class="sort-button-list">
             <li class="sort-button-item">
-              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы плиткой</span></button>
+              <button class="layout-icons layout-icons-tile" type="button"><span class="visually-hidden">отображение вариантов гостиницы плиткой</span></button>
             </li>
             <li class="sort-button-item">
-              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы по одной на страницу</span></button>
+              <button class="layout-icons layout-icons-completely" type="button"><span class="visually-hidden">отображение вариантов гостиницы по одной на страницу</span></button>
             </li>
             <li class="sort-button-item">
-              <button class="layout-icons" type="button"><span class="visually-hidden">отображение вариантов гостиницы списком</span></button>
+              <button class="layout-icons layout-icons-roster" type="button"><span class="visually-hidden">отображение вариантов гостиницы списком</span></button>
             </li>
           </ul>
         </div>
@@ -103,6 +103,9 @@
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="./img/hotels/hotel-Amara.jpg" width="300" height="212" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Amara Resort & Spa</h3></a>
           <span>Гостиница От <i>4000</i> ₽</span>
+          <!-- МОЖЕТ ЛУЧШЕ ТАК РАЗДЕЛИТЬ ДЛЯ ДАЛЬНЕЙШЕЙ верстки влево-вправо?
+            <span class="side-text-left">Гостиница</span><span class="side-text-right">От <i>4000</i> ₽</span>
+          -->
           <a class="hotels-link" href="#"><b>подробнее</b></a>
           <button class="button button-favourites" type="submit" ><b>в избранное</b></button>
           <ul class="rating-stars">
@@ -162,7 +165,7 @@
       </ul>
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link-current" href="#">1</a>
+          <a class="pagination-link pagination-link-current" href="#">1</a>
             <span class="visually-hidden">страница отелей один</span>
         </li>
         <li class="pagination-item">
@@ -212,7 +215,7 @@
       </li>
     </ul>
 
-    <a href="tel:+78121212">+7 (812) 812-12-12</a>
+    <a class="tel" href="tel:+78121212">+7 (812) 812-12-12</a>
     <a class="link-htmlacademy" href="https://up.htmlacademy.ru"><img class="htmlacademy-logo" src="./img/academy-logo.svg" width="114.9" height="32.9" alt="логотип html-academy"></a>
   </footer>
 </body>

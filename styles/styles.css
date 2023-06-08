@@ -28,10 +28,15 @@ body {
   visibility: hidden;
 }
 
-.navigation-list, .user-list, {
-  text-decoration: none;
+.navigation-list, .navigation-user-list, .user-list, .sort-button-list, .hotels-list, .filter-infrastructure-list {
   list-style: none;
 }
+
+.navigation-link, .hotels-link, .likes {
+text-decoration: none;
+}
+
+a.navigation-link:visited { color: #000000; }
 
 .navigation-list {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -55,10 +60,11 @@ body {
   padding: 22px;
 }
 
-.button-registration {
+.button-registration, .hotels-link {
 font-family: inherit;
 color: #ffffff;
 background-color: #756157;
+border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
@@ -114,6 +120,22 @@ li.advantages-item:nth-child(4) {
 li.residence-item:nth-child(1), li.residence-item:nth-child(3) {
   background: rgba(131, 179, 211, 0.12);
 }
+
+li.residence-item:nth-child(1) {
+  background-image: url(../img/icons/residence-icon-house.svg);
+  background-repeat: no-repeat;
+}
+
+li.residence-item:nth-child(2) {
+  background-image: url(../img/icons/residence-icon-food.svg);
+  background-repeat: no-repeat;
+}
+
+li.residence-item:nth-child(3) {
+  background-image: url(../img/icons/residence-icon-gift.svg);
+  background-repeat: no-repeat;
+}
+
 .advantages-list, .residence-list {
   list-style: none;
 }
@@ -182,6 +204,135 @@ li.social-icon:nth-child(3) {
   text-transform: uppercase;
   color: #000000;
 }
+
+
+/*
+СТИЛИЗАЦИЯ ОСТАВШИХСЯ ЧАСТЕЙ - СТРАНИЦА "ГОСТИННИЦЫ"
+*/
+
+.filter-price {
+  background-color: blue ;
+  background-image: url(../img/filter-hotels-sedona.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.filter-price {
+  color: #ffffff;
+}
+
+.inner-page-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+}
+
+.breadcrumbs-item-home {
+  background-image: url(../img/icons/icon-back-to-main.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-infrastructure-form {
+  color: #ffffff;
+}
+
+.filter-infrastructure-form legend, .filter-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+}
+
+.filter-infrastructure-item {
+  line-height: 23px;
+}
+
+/* Почему кнопка "применить" стилизовалась, а кнопка "сбросить" - нет при одинаковых параметрах? (ниже) */
+
+.button-favourites {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  color:#ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-cancel {
+  color:#ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.layout-icons {
+  background-repeat: no-repeat;
+  padding: 9px;
+}
+
+.layout-icons-tile {
+  background-image: url(../img/icons/icon-order1.svg);
+  background-repeat: no-repeat;
+  padding: 9px;
+}
+
+.layout-icons-completely {
+  background-image: url(../img/icons/icon-order2.svg);
+}
+
+.layout-icons-roster {
+  background-image: url(../img/icons/icon-order3.svg);
+}
+
+.hotels-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+}
+
+.rating-total {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+
+
+
+
+
 /*
 a {
   text-decoration: none;
