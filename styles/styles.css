@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -28,7 +28,7 @@ body {
   visibility: hidden;
 }
 
-.navigation-list, .user-list {
+.navigation-list, .user-list, {
   text-decoration: none;
   list-style: none;
 }
@@ -55,11 +55,10 @@ body {
   padding: 22px;
 }
 
-.user-item .button-registration {
+.button-registration {
 font-family: inherit;
 color: #ffffff;
 background-color: #756157;
-font-family: 'PT Sans';
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
@@ -100,6 +99,21 @@ text-transform: uppercase;
 }
 */
 
+li.advantages-item:nth-child(1), li.advantages-item:nth-child(7) {
+  background-color: #82B3D3;
+}
+
+li.advantages-item:nth-child(3), li.advantages-item:nth-child(5) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+li.advantages-item:nth-child(4) {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+li.residence-item:nth-child(1), li.residence-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.12);
+}
 .advantages-list, .residence-list {
   list-style: none;
 }
@@ -108,9 +122,6 @@ text-transform: uppercase;
 text-align: center;
 }
 
-.advatnages-item p {
-  line-height: 21px;
-}
 
 .advatnages-titles, .residence-titles {
 font-weight: 700;
@@ -120,16 +131,57 @@ text-transform: uppercase;
 color: #000000;
 }
 
-.advantages-titles-white {
+.advantages-titles-white, .subscribe-white, .subtitle-white {
   color: #ffffff;
 }
 
-.residence-item p {
-  line-height: 21px;
+.registration .button-registration {
+  font-size: 20px;
+  line-height: 36px;
 }
 
+.subscribe-white {
+  background-color: blue ;
+  background-image: url(../img/Subscribe-back.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 
+.button-subscribe {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+li.social-icon:nth-child(1) {
+  background-image: url(../img/icons/icon-vk.svg);
+  background-repeat: no-repeat ;
+}
+
+li.social-icon:nth-child(2) {
+  background-image: url(../img/icons/icon-telegram.svg);
+  background-repeat: no-repeat ;
+}
+
+li.social-icon:nth-child(3) {
+  background-image: url(../img/icons/icon-YT.svg);
+  background-repeat: no-repeat ;
+}
+
+.tel {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
 /*
 a {
   text-decoration: none;
