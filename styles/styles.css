@@ -25,14 +25,20 @@ body {
 
 .visually-hidden {
   position:absolute;
-  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: o;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .navigation-list, .navigation-user-list, .user-list, .sort-button-list, .hotels-list, .filter-infrastructure-list {
   list-style: none;
 }
 
-.navigation-link, .hotels-link, .likes {
+.navigation-link, .hotels-link, .button-hotels-link, .likes {
 text-decoration: none;
 }
 
@@ -60,16 +66,26 @@ a.navigation-link:visited { color: #000000; }
   padding: 22px;
 }
 
-.button-registration, .hotels-link {
+.button, .button-hotels-link {
 font-family: inherit;
 color: #ffffff;
-background-color: #756157;
 border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
 text-align: center;
 text-transform: uppercase;
+min-height: 36px;
+}
+
+.button-registration, .button-hotels-link {
+  background-color: #756157;
+}
+
+.registration .button-registration {
+  font-size: 20px;
+  line-height: 36px;
+  min-height: 52px;
 }
 
 .hero {
@@ -77,11 +93,7 @@ text-transform: uppercase;
   background-image: url(../img/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.devider {
-  background-image: url(../img/hero-devider.svg);
-  background-repeat: no-repeat;
+  min-height: 485px;
 }
 
 .subtitle {
@@ -98,12 +110,6 @@ text-transform: uppercase;
   line-height: 26px;
   text-align: center;
 }
-
-/*
-.advantages {
-  font-weight: 400;
-}
-*/
 
 li.advantages-item:nth-child(1), li.advantages-item:nth-child(7) {
   background-color: #82B3D3;
@@ -157,27 +163,21 @@ color: #000000;
   color: #ffffff;
 }
 
-.registration .button-registration {
-  font-size: 20px;
-  line-height: 36px;
-}
+
 
 .subscribe-white {
   background-color: blue ;
   background-image: url(../img/Subscribe-back.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  min-height: 415px;
 }
 
 .button-subscribe {
-  font-family: inherit;
-  color: #ffffff;
   background-color: #82B3D3;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
+  min-height: 52px;
 }
 
 li.social-icon:nth-child(1) {
@@ -215,6 +215,7 @@ li.social-icon:nth-child(3) {
   background-image: url(../img/filter-hotels-sedona.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  min-width: 412px;
 }
 
 .filter-price {
@@ -251,29 +252,9 @@ text-transform: capitalize;
   line-height: 23px;
 }
 
-/* Почему кнопка "применить" стилизовалась, а кнопка "сбросить" - нет при одинаковых параметрах? (ниже) */
-
-.button-favourites {
+.button-add {
   background-color: #82B3D3;
-  border-radius: 4px;
-  color:#ffffff;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.button-cancel {
-  color:#ffffff;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
+ }
 
 .layout-icons {
   background-repeat: no-repeat;
@@ -302,6 +283,10 @@ text-transform: capitalize;
   text-align: left;
 }
 
+.hotels-photo {
+  min-height: 212px;
+}
+
 .rating-total {
   font-size: 16px;
   line-height: 20px;
@@ -321,6 +306,7 @@ text-transform: capitalize;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
+  min-height: 60px;
 }
 
 .pagination-link-current {
@@ -328,7 +314,23 @@ text-transform: capitalize;
   background-color: #F2F2F2;
 }
 
+span.advatnages-titles::after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  display:block;
+  margin-top: 30px;
+}
 
+span.advatnages-titles:nth-of-type(1)::after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  display:block;
+  margin-top: 30px;
+  }
 
 
 

@@ -22,7 +22,7 @@
           <li class="user-item">
             <a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
           <li class="user-item">
-            <a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12<b></a></li>
+            <a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12</b></a></li>
           <li class="user-item">
             <button class="button button-registration">ХОЧУ СЮДА!</button></li>
         </ul>
@@ -68,7 +68,7 @@
         <label><input type="number" name="min-price" min="0" max="9000" step="100" placeholder="от" value="0">от</label>
         <label><input type="number" name="max-price" min="0" max="9000" step="100" placeholder="до" value="0">до</label>
         <input type="range" name="slider" min="0" max="9000">
-      <button type="submit" class="button button-favourites">Применить</button>
+      <button type="submit" class="button button-add">Применить</button>
       <button type="submit" сlass="button button-cancel">Сбросить</button>
       </form>
     </section>
@@ -102,12 +102,10 @@
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="./img/hotels/hotel-Amara.jpg" width="300" height="212" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Amara Resort & Spa</h3></a>
-          <span>Гостиница От <i>4000</i> ₽</span>
-          <!-- МОЖЕТ ЛУЧШЕ ТАК РАЗДЕЛИТЬ ДЛЯ ДАЛЬНЕЙШЕЙ верстки влево-вправо?
             <span class="side-text-left">Гостиница</span><span class="side-text-right">От <i>4000</i> ₽</span>
-          -->
-          <a class="hotels-link" href="#"><b>подробнее</b></a>
-          <button class="button button-favourites" type="submit" ><b>в избранное</b></button>
+
+          <a class="button button-hotels-link" href="#"><b>подробнее</b></a>
+          <button class="button button-add" type="submit" ><b>в избранное</b></button>
           <ul class="rating-stars">
             <li class="active"></li>
             <li class="active"></li>
@@ -120,9 +118,9 @@
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="./img/hotels/hotel-Villas.jpg" width="300" height="212" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Villas at Poco Diablo</h3></a>
-          <span>Гостиница От <i>5000</i> ₽</span>
-          <a class="hotels-link" href="#"><b>подробнее</b></a>
-          <button class="button button-favourites" type="submit"><b>в избранное</b></button>
+            <span class="side-text-left">Гостиница</span><span class="side-text-right">От <i>5000</i> ₽</span>
+          <a class="button button-hotels-link" href="#"><b>подробнее</b></a>
+          <button class="button button-add" type="submit"><b>в избранное</b></button>
           <ul class="rating-stars">
             <li class="active"></li>
             <li class="active"></li>
@@ -135,9 +133,9 @@
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="./img/hotels/hotel-Desert.jpg" width="300" height="212" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">Desert Quail Inn</h3></a>
-          <span>Гостиница От <i>2500</i> ₽</span>
-          <a class="hotels-link" href="#"><b>подробнее</b></a>
-          <button class="button button-favourites" type="submit"><b>в избранное</b></button>
+            <span class="side-text-left">Гостиница</span><span class="side-text-right">От <i>2500</i> ₽</span>
+          <a class="button button-hotels-link" href="#"><b>подробнее</b></a>
+          <button class="button button-add" type="submit"><b>в избранное</b></button>
           <ul class="rating-stars">
             <li class="active"></li>
             <li class="active"></li>
@@ -150,9 +148,9 @@
         <li class="hotels-item">
           <a class="hotels-link" href="#">
             <img class="hotels-photo" src="./img/hotels/hotel-Green.jpg" width="300" height="212" alt="пейзаж окрестностей гостиницы"><h3 class="hotels-title">GreenTree Inn</h3></a>
-          <span>Гостиница От <i>1500</i> ₽</span>
-          <a class="hotels-link" href="#"><b>подробнее</b></a>
-          <button class="button button-favourites" type="submit"><b>в избранное</b></button>
+            <span class="side-text-left">Гостиница</span><span class="side-text-right">От <i>1500</i> ₽</span>
+          <a class="button button-hotels-link" href="#"><b>подробнее</b></a>
+          <button class="button button-add" type="submit"><b>в избранное</b></button>
           <ul class="rating-stars">
             <li class="active"></li>
             <li class="active"></li>
@@ -197,7 +195,7 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <span class="visually-hidden">Ввод адреса электронного почтового ящика</span>
         <input type="email" name="e-mail adress" placeholder="Ваш e-mail">
-        <button type="submit" class="button-subscribe">Подписаться</button>
+        <button type="submit" class="button button-subscribe">Подписаться</button>
       </form>
     </section>
   </main>
