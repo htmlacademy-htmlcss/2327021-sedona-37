@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -15,12 +12,12 @@
     <header class="page-header">
       <span class="logo"><img class="page-logo" src="./img/main-logo.png" width="140" height="70" alt="логотип Седона"></span>
       <nav class="navigation">
-        <h2>меню навигации по сайту</h2>
+        <h2 class="visually-hidden">меню навигации по сайту</h2>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link--active" href="#">Главная</a></li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О нас</a></li>
+              <a class="navigation-link" href="#">О седоне</a></li>
             <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -28,7 +25,7 @@
 
         <ul Class="user-list">
           <li class="user-item"><a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="user-item"><a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12<b></a></li>
+            <li class="user-item"><a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12</b></a></li>
           <li class="user-item"><button class="button button-registration">ХОЧУ СЮДА!</button></li>
         </ul>
     </header>
@@ -39,7 +36,7 @@
         <img class="hero-image-item" src="./img/hero-text-welcome.svg" width="187.7" height="44.7" alt="Welcome to the gargeous">
         <img class="hero-image-item" src="./img/Hero-text-to-the-gargerous.svg" width="256" height="28.78" alt="Sedona">
         <img class="hero-image-item" src="./img/hero-text-sedona.svg" width="456.7" height="212.77" alt="Because the grand canyon sucks">
-      </section>
+        </section>
 
       <section class="welcome">
         <h2 class="visually-hidden">Информация о Седоне</h2>
@@ -52,7 +49,9 @@
         <h2 class="visually-hidden">Преимущества курорта Седона</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <span class="advatnages-titles advantages-titles-white">Настоящий городок</span><p class="advantages-titles-white">Все достопримечательности находятся очень близко</p></li>
+            <span class="advatnages-titles advantages-titles-white">Настоящий городок
+
+            </span><p class="advantages-titles advantages-titles-white">Все достопримечательности находятся очень близко</p></li>
           <li class="advantages-item">
             <img class="advantages-image" src="./img/advantages-photo1_town.jpg" width="800" height="385" alt="Фото внешних фасадов"></li>
           <li class="advantages-item">
@@ -64,7 +63,7 @@
           <li class="advantages-item">
             <img class="advantages-image" src="./img/advantages-photo2_canyon.jpg" width="800" height="385" alt="Фото горных каньонов"></li>
           <li class="advantages-item">
-            <span class="advatnages-titles advantages-titles-white">Там есть мост дьявола</span><p class="advantages-titles-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></li>
+            <span class="advatnages-titles advantages-titles-white">Там есть мост дьявола</span><p class="advantages-titles advantages-titles-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></li>
         </ul>
       </section>
 
@@ -74,7 +73,7 @@
           <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="residence-list">
           <li class="residence-item">
-            <span class="residence-titles">Жильё</span><p>Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p></li>
+            <span class="residence-titles">Жильё</span><p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
           <li class="residence-item">
             <span class="residence-titles">Еда</span><p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p></li>
           <li class="residence-item">
@@ -89,19 +88,19 @@
         <button class="button button-registration">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
 
-      <section class="subscribe">
-        <h2 class="subtitle">Подпишитесь на рассылку</h2>
+      <section class="subscribe subscribe-white">
+        <h2 class="subtitle-white">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <span class="visually-hidden">Ввод адреса электронного почтового ящика</span>
           <input type="email" name="e-mail adress" placeholder="Ваш e-mail">
-          <button type="submit" class="button-subscribe">Подписаться</button>
+          <button type="submit" class="button button-subscribe">Подписаться</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <ul class="social">
+      <ul class="social-list">
         <li class="social-icon">
           <a class="" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </li>
@@ -113,7 +112,7 @@
         </li>
       </ul>
 
-      <a href="tel:+78121212">+7 (812) 812-12-12</a>
+      <a class="tel" href="tel:+78121212">+7 (812) 812-12-12</a>
       <a class="link-htmlacademy" href="https://up.htmlacademy.ru"><img class="htmlacademy-logo" src="./img/academy-logo.svg" width="114.9" height="32.9" alt="логотип html-academy"></a>
     </footer>
 
