@@ -10,27 +10,54 @@
   <body>
     <h1 class="visually-hidden">Сайт курорта Седона</h1>
     <header class="page-header">
-      <span class="logo"><img class="page-logo" src="./img/main-logo.png" width="140" height="70" alt="логотип Седона"></span>
       <nav class="navigation">
         <h2 class="visually-hidden">меню навигации по сайту</h2>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link--active" href="#">Главная</a></li>
+      <div class="header-container">
+        <span class="logo"><img class="page-logo" src="./img/main-logo.png" width="140" height="70" alt="логотип Седона"></span>
+
+          <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a></li>
-            <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+              <a class="navigation-link navigation-link--active" href="#">Главная</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a></li>
+              <li class="navigation-item">
+                  <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+
 
         <ul Class="user-list">
           <li class="user-item"><a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="user-item"><a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12</b></a></li>
+          <li class="user-item"><a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12</b></a></li>
+          <li class="user-item"><button class="button button-registration">ХОЧУ СЮДА!</button></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <!--
+       <h1 class="visually-hidden">Сайт курорта Седона</h1>
+    <header class="page-header">
+        <span class="logo"><img class="page-logo" src="./img/main-logo.png" width="140" height="70" alt="логотип Седона"></span>
+        <nav class="navigation">
+          <h2 class="visually-hidden">меню навигации по сайту</h2>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link--active" href="#">Главная</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a></li>
+              <li class="navigation-item">
+                  <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+
+        <ul Class="user-list">
+          <li class="user-item"><a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
+          <li class="user-item"><a class="likes" href="#"><span class="visually-hidden">избранное и отзывы</span><b>12</b></a></li>
           <li class="user-item"><button class="button button-registration">ХОЧУ СЮДА!</button></li>
         </ul>
     </header>
-
-    <main>
+    -->
+    <main class="main-container">
       <section class="hero">
         <h1 class="visually-hidden">курорт Седона</h1>
         <img class="hero-image-item" src="./img/hero-text-welcome.svg" width="187.7" height="44.7" alt="Welcome to the gargeous">

@@ -14,13 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -88,9 +100,14 @@ min-height: 36px;
   min-height: 52px;
 }
 
+.button-registration {
+padding: 5px 50px;
+}
+
 .hero {
   background-color: blue ;
   background-image: url(../img/hero-background.jpg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88.04%, 80% 94.06%, 80% 88.04%, 50% 100%, 20% 88.04%, 20% 94.06%, 0% 88.04%);
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 485px;
@@ -314,7 +331,7 @@ text-transform: capitalize;
   background-color: #F2F2F2;
 }
 
-span.advatnages-titles::after {
+li .advatnages-titles::after {
   content: '';
   width: 60px;
   height: 2px;
@@ -323,7 +340,7 @@ span.advatnages-titles::after {
   margin-top: 30px;
 }
 
-span.advatnages-titles:nth-of-type(1)::after {
+li .advatnages-titles:nth-of-type(1)::after {
   content: '';
   width: 60px;
   height: 2px;
@@ -331,6 +348,87 @@ span.advatnages-titles:nth-of-type(1)::after {
   display:block;
   margin-top: 30px;
   }
+
+
+/*
+Сетки
+*/
+
+.header-container {
+  display:flex;
+  flex-direction: row;
+  width: 1200px;
+  padding: 0 70px;
+  margin: 0 auto;
+
+}
+
+.page-logo {
+  margin-right: 28px;
+}
+
+.navigation-list {
+  display:flex;
+  width: 340px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  align-items: center;
+
+}
+
+.navigation-list .navigation-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.user-list .user-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.user-list {
+  display: flex;
+  max-width: 300px;
+  align-items: center;
+  margin: 0;
+}
+
+
+/*
+.header-container {
+  display:flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-logo {
+  display:block;
+}
+
+.navigation-list {
+  display:flex;
+  width: 340px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  gap: 30px;
+}
+
+.user-list {
+  display: flex;
+  max-width: 300px;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+*/
+
+
+
+
+
+
+
+
 
 
 
