@@ -76,7 +76,13 @@ text-decoration: none;
 
 a.navigation-link:visited { color: #000000; }
 
+a:link {
+  color:#000000;
+}
+
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -234,21 +240,7 @@ max-width: 175px;
   border-top-right-radius: 4px;
 }
 
-.bg-icon_telegram {
-  width: 18px; height: 16px;
-  background: url(/img/icons/sprites/css_sprites.png);
-  background-position:  -10px -48px;
-}
 
-.bg-icon_vk {
-  width: 25px; height: 15px;
-  background: url('css_sprites.png') -53px -10px;
-}
-
-.bg-icon_YT {
-  width: 23px; height: 18px;
-  background: url('css_sprites.png') -10px -10px;
-}
 
 /*
 li.social-icon:nth-child(1) a {
@@ -283,6 +275,8 @@ li.social-icon:nth-child(3) {
 */
 
 .filter-price {
+  display: flex;
+  flex-direction: column;
   background-color: blue ;
   background-image: url(../img/filter-hotels-sedona.jpg);
   background-size: 100% auto;
@@ -311,6 +305,7 @@ li.social-icon:nth-child(3) {
 }
 
 .filter-infrastructure-form {
+  display: flex;
   color: #ffffff;
 }
 
@@ -410,21 +405,19 @@ li .advatnages-titles:nth-of-type(1)::after {
 Сетки
 */
 
-.navigation {
+.page-header {
   display:flex;
   flex-direction: row;
   width: 1200px;
   padding: 0 70px;
   justify-content: space-between;
-
-
+  margin-bottom: -6px;
 }
 
-.header-lists-group {
+.navigation {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-
 }
 
 .page-logo {
@@ -445,7 +438,6 @@ li .advatnages-titles:nth-of-type(1)::after {
 }
 
 .navigation-list {
-
   margin-right: 285px;
 }
 
@@ -459,14 +451,12 @@ li .advatnages-titles:nth-of-type(1)::after {
 
 .user-list {
   display: flex;
-  max-width: 300px;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .hero {
-  margin-top: -6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -510,8 +500,6 @@ li .advatnages-titles:nth-of-type(1)::after {
   grid-template-rows: repeat(3, 385px);
   text-align: center;
   box-sizing: border-box;
-
-
 }
 
 .advantages-item {
@@ -595,7 +583,7 @@ li .advatnages-titles:nth-of-type(1)::after {
   margin-bottom: 54px;
 }
 
-.footer-container {
+.page-footer {
   display: flex;
   width: 1200px;
   min-height: 120px;
@@ -640,6 +628,42 @@ li .advatnages-titles:nth-of-type(1)::after {
   padding: 5px 195px;
   margin: 0 auto;
 }
+
+
+.catalog-hotels {
+  width: 1200px;
+  padding: 50px 70px 60px;
+}
+
+.hotels-choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-button-list {
+  display: flex;
+}
+
+.hotels-sort, .hotels-choice {
+  display: flex;
+  align-items: center;
+}
+
+.select-sorting {
+  margin-right: 70px;
+}
+
+.sort-button-item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 14px 12px;
+}
+
+.sort-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 
 /*
 .header-container {
