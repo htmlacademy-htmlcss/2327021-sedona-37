@@ -63,7 +63,7 @@ body {
 }
 
 .navigation-list, .navigation-user-list, .user-list, .sort-button-list, .hotels-list, .filter-infrastructure-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-link, .hotels-link, .button-hotels-link, .likes {
@@ -74,9 +74,13 @@ text-decoration: none;
   display: block;
 }
 
+.navigation-link {
+  padding: 16px 17px 16px 17px;
+}
+
 a.navigation-link:visited { color: #000000; }
 
-a:link {
+.navigation a:link {
   color:#000000;
 }
 
@@ -108,6 +112,9 @@ a:link {
 }
 
 .user-item a {
+  display:block;
+  min-width: 44px;
+  min-height: 64px;
   padding: 22px;
 }
 
@@ -135,6 +142,9 @@ border: none;
   padding: 8px 50px;
 }
 
+.user-list .button-registration {
+  padding: 8px 50px;
+}
 
 .hero {
   background-color: blue ;
@@ -293,6 +303,15 @@ li.social-icon:nth-child(3) {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
 }
 
 .breadcrumbs-link {
@@ -364,10 +383,25 @@ text-transform: capitalize;
   border-radius: 4px;
 }
 
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
   color: #ffffff;
   background-color: #82B3D3;
   text-align: center;
@@ -415,34 +449,29 @@ li .advatnages-titles:nth-of-type(1)::after {
 }
 
 .navigation {
+  min-width: 890px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .page-logo {
   display: block;
   position: relative;
   z-index: 1;
-  margin-right: 28px;
 }
 
 .navigation-list {
   display:flex;
   flex-wrap: wrap;
-  width: 340px;
+  width: 500px;
   margin: 0;
-  margin-right: auto;
   padding: 0;
   align-items: center;
 }
 
-.navigation-list {
-  margin-right: 285px;
-}
-
 .navigation-list .navigation-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 6px;
 }
 
 .user-list .user-item:not(:last-child) {
@@ -638,6 +667,7 @@ li .advatnages-titles:nth-of-type(1)::after {
 .hotels-choice {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .sort-button-list {
@@ -662,6 +692,11 @@ li .advatnages-titles:nth-of-type(1)::after {
 
 .sort-button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
 }
 
 
