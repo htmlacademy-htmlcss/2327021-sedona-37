@@ -39,18 +39,23 @@
 
   <main class="main-container">
       <section class="filter-price">
+        <div class="container">
         <h1 class="inner-page-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item-home">
-            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную страницу</span></a>
+          <li class="breadcrumbs-item breadcrumbs-item-home">
+            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span class="visually-hidden">На главную страницу</span></a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link">Гостиницы</a></li>
         </ul>
+
+
 
         <form class="filter-infrastructure-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">перечень дополнительных опций места проживания</h2>
-          <fieldset class="filter-infrastructure-option">
+
+          <div>
+          <fieldset class="filter-infrastructure filter-infrastructure-option">
             <legend class="filter-title">Инфраструктура:</legend>
             <ul class="filter-infrastructure-list">
               <li class="filter-infrastructure-item">
@@ -60,8 +65,10 @@
               <li class="filter-infrastructure-item">
                 <label><input type="checkbox" name="wifi">Wi-Fi</label></li>
           </fieldset>
+        </div>
 
-          <fieldset class="filter-infrastructure-type">
+          <div>
+            <fieldset class="filter-infrastructure filter-infrastructure-type">
             <legend class="filter-title">Тип Жилья:</legend>
             <ul class="filter-infrastructure-list">
               <li class="filter-infrastructure-item">
@@ -71,14 +78,22 @@
               <li class="filter-infrastructure-item">
                 <label><input type="radio" name="housing-group" value="apartaments">Апартаменты</label></li>
           </fieldset>
+        </div>
 
+        <div>
           <p class="filter-title">Стоимость, ₽:</p>
           <label><input type="number" name="min-price" min="0" max="9000" step="100" placeholder="от" value="0">от</label>
           <label><input type="number" name="max-price" min="0" max="9000" step="100" placeholder="до" value="0">до</label>
           <input type="range" name="slider" min="0" max="9000">
+        </div>
+
+      <div>
         <button type="submit" class="button button-add">Применить</button>
         <button type="submit" сlass="button button-cancel">Сбросить</button>
         </form>
+      </div>
+
+        </div>
       </section>
 
 
@@ -231,7 +246,7 @@
     <section class="subscribe">
       <h2 class="subtitle">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <span class="visually-hidden">Ввод адреса электронного почтового ящика</span>
         <input type="email" name="e-mail adress" placeholder="Ваш e-mail">
         <button type="submit" class="button button-subscribe">Подписаться</button>

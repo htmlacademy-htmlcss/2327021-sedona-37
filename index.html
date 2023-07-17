@@ -100,7 +100,7 @@
         <section class="subscribe subscribe-white">
           <h2 class="subtitle subtitle-white">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <span class="visually-hidden">Ввод адреса электронного почтового ящика</span>
             <input type="email" name="e-mail adress" placeholder="Ваш e-mail">
             <button type="submit" class="button button-subscribe">Подписаться</button>
@@ -136,30 +136,35 @@
         <a class="link-htmlacademy" href="https://up.htmlacademy.ru"><img class="htmlacademy-logo" src="./img/academy-logo.svg" width="115" height="33" alt="логотип html-academy"></a>
       </footer>
 
-  <!-- МОДАЛЬНОЕ ОКНО, ПОЯВЛЯЮЩЕЕСЯ ПО ОНКЛИКУ
+  <!-- МОДАЛЬНОЕ ОКНО, ПОЯВЛЯЮЩЕЕСЯ ПО ОНКЛИКУ -->
 
-      <div class="window">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <h3>Поиск гостиницы в Седоне</h3>
-          <button class="button button-close"><span class="visually-hidden"></span>закрыть окно</button>
-          <ul class="window-registration-list">
-            <li class="window-registration-item">
-              <label>Дата заезда:<input type="date" name="coming-date" value="2020-04-27" min="2023-06-02" max="2123-06-01" required></label><span>Мы не можем отправить вас в прошлое.</span>
-            </li>
-            <li class="window-registration-item">
-              <label>Дата выезда:<input type="date" name="coming-date" value="2023-09-01" min="2023-06-02" max="2123-06-01" required></label><span>На эти даты есть свободные номера. Пока есть.</span>
-            </li>
-            <li class="window-registration-item">
-              <label>Взрослые:<input type="number" value="2" min="0" max="50" required></label><span class="visually-hidden">Укажите количество детей, если есть</span>
-            </li>
-            <li class="window-registration-item">
-            <label>Дети:<span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span><input type="number" value="2" min="0" max="50" required></label>
-            </li>
-          </ul>
-          <a class="button button-favourites" href="#">Найти<span class="visually-hidden">найти свободный номер</span></a>
-        </form>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <h3>Поиск гостиницы в Седоне</h3>
+            <button class="button button-close"><span class="visually-hidden"></span>закрыть окно</button>
+            <ul class="window-registration-list">
+              <li class="window-registration-item">
+                <label>Дата заезда:<input type="date" name="coming-date" value="2020-04-27" min="2023-06-02" max="2123-06-01" required></label><span>Мы не можем отправить вас в прошлое.</span>
+              </li>
+              <li class="window-registration-item">
+                <label>Дата выезда:<input type="date" name="coming-date" value="2023-09-01" min="2023-06-02" max="2123-06-01" required></label><span>На эти даты есть свободные номера. Пока есть.</span>
+              </li>
+              <li class="window-registration-item">
+                <label>Взрослые:<input type="number" value="2" min="0" max="50" required></label><span class="visually-hidden">Укажите количество детей, если есть</span>
+              </li>
+              <li class="window-registration-item">
+              <label>Дети:<span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span><input type="number" value="2" min="0" max="50" required></label>
+              </li>
+            </ul>
+            <a class="button button-favourites" href="#">Найти<span class="visually-hidden">найти свободный номер</span></a>
+          </form>
+        </div>
       </div>
-  -->
+
     </div>
   </body>
 </html>

@@ -66,6 +66,13 @@ body {
   list-style-type: none;
 }
 
+.filter-infrastructure-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 16px;
+}
+
 .navigation-link, .hotels-link, .button-hotels-link, .likes {
 text-decoration: none;
 }
@@ -296,19 +303,35 @@ margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
 }
 
-.breadcrumbs-item-home {
+.breadcrumbs-item {
+  margin-right: 10px;
+}
+
+.breadcrumbs-item-home  {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.breadcrumbs-link-home {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 1px;
   background-image: url(../img/icons/icon-back-to-main.svg);
   background-repeat: no-repeat;
 }
 
 .filter-infrastructure-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   color: #ffffff;
 }
 
@@ -321,6 +344,17 @@ text-transform: capitalize;
 
 .filter-infrastructure-item {
   line-height: 23px;
+}
+
+.filter-infrastructure-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-title {
+  margin-bottom: 32px;
+  margin-top: 0;
 }
 
 .button-add {
@@ -751,58 +785,43 @@ li .advatnages-titles::after {
   right: 3px;
 }
 
-
-
-/*
-.header-container {
-  display:flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.page-logo {
-  display:block;
-}
-
-.navigation-list {
-  display:flex;
-  width: 340px;
-  margin: 0;
-  margin-right: auto;
-  padding: 0;
-  gap: 30px;
-}
-
-.user-list {
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  max-width: 300px;
-  align-items: center;
-  margin: 0;
-  gap: 20px;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-a {
-  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
 }
 
-
-  background-color: #82B3D3;
-
-a:hover {
-  color: #0088cc;
+.modal-container-close {
+  display: none;
 }
 
-*/
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 684px;
+}
+
+.subscribe-form input {
+  display: inline-block;
+  width: 452px;
+  min-height: 52px;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+}
