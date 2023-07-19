@@ -82,7 +82,7 @@ text-decoration: none;
 }
 
 .navigation-link {
-  padding: 16px 17px 16px 17px;
+  padding: 16px 0 16px 0;
 }
 
 .navigation-link:visited { color: #000000; }
@@ -626,7 +626,7 @@ background-image: url(../img/icons/tick.svg);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 35px;
+  gap: 30px;
 }
 
 .layout-icons {
@@ -758,7 +758,7 @@ li .advatnages-titles::after {
 }
 
 .navigation-list .navigation-item:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 32px;
 }
 
 .user-list .user-item:not(:last-child) {
@@ -904,7 +904,7 @@ li .advatnages-titles::after {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  padding: 96px 258px;
+  padding: 96px 70px;
 }
 
 .subscribe .subtitle {
@@ -923,7 +923,7 @@ li .advatnages-titles::after {
   min-height: 120px;
   padding: 40px 70px 30px 70px;
   box-sizing: border-box;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -957,8 +957,8 @@ li .advatnages-titles::after {
 
 
 .tel {
-  padding: 5px 195px;
-  margin: 0 auto;
+  padding: 5px 10px;
+  margin: 0;
 }
 
 
@@ -1039,6 +1039,7 @@ li .advatnages-titles::after {
   padding: 0;
   list-style-type: none;
   display: flex;
+  gap: 6px;
 }
 
 .stars-active {
@@ -1069,6 +1070,10 @@ li .advatnages-titles::after {
 
 .side-text-right {
   justify-self: end;
+}
+
+.side-text-right i {
+  font-style: normal;
 }
 
 .button-hotels-link {
