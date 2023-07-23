@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.svg">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -56,36 +57,38 @@
               <h2 class="visually-hidden">перечень дополнительных опций места проживания</h2>
 
               <div class="filter-infrastructure-form-container" >
-              <fieldset class="filter-infrastructure filter-infrastructure-option">
-                <legend class="filter-title">Инфраструктура:</legend>
-                <ul class="filter-infrastructure-list">
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="checkbox" name="whaterpool" checked><span class="control-mark"></span><span class="control-label">Бассейн</span></label></li>
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="checkbox" name="parking" checked><span class="control-mark"></span><span class="control-label">Парковка</span></label></li>
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="checkbox" name="wifi"><span class="control-mark"></span><span class="control-label">Wi-Fi</span></label></li>
-              </fieldset>
+                <fieldset class="filter-infrastructure filter-infrastructure-option">
+                  <legend class="filter-title">Инфраструктура:</legend>
+                  <ul class="filter-infrastructure-list">
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="checkbox" name="whaterpool" checked><span class="control-mark"></span><span class="control-label">Бассейн</span></label></li>
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="checkbox" name="parking" checked><span class="control-mark"></span><span class="control-label">Парковка</span></label></li>
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="checkbox" name="wifi"><span class="control-mark"></span><span class="control-label">Wi-Fi</span></label></li>
+                  </ul>
+                </fieldset>
 
-              <fieldset class="filter-infrastructure filter-infrastructure-type">
-                <legend class="filter-title">Тип Жилья:</legend>
-                <ul class="filter-infrastructure-list">
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="hotel" checked><span class="control-mark"></span><span class="control-label">Гостиница</span></label></li>
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="motel"><span class="control-mark"></span><span class="control-label">Мотель</span></label></li>
-                  <li class="filter-infrastructure-item">
-                    <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="apartaments"><span class="control-mark"></span><span class="control-label">Апартаменты</span></label></li>
-              </fieldset>
-            </div>
+                <fieldset class="filter-infrastructure filter-infrastructure-type">
+                  <legend class="filter-title">Тип Жилья:</legend>
+                  <ul class="filter-infrastructure-list">
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="hotel" checked><span class="control-mark"></span><span class="control-label">Гостиница</span></label></li>
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="motel"><span class="control-mark"></span><span class="control-label">Мотель</span></label></li>
+                    <li class="filter-infrastructure-item">
+                      <label class="control"><input class="visually-hidden control-input" type="radio" name="housing-group" value="apartaments"><span class="control-mark"></span><span class="control-label">Апартаменты</span></label></li>
+                  </ul>
+                </fieldset>
+              </div>
 
-            <div class="slider-container">
-              <fieldset class="filter-price-slider">
-                <legend class="filter-title">Стоимость, ₽:</legend>
-                <div class="margin-container">
-                <label><input class="filter-price-input filter-price-input-min" type="number" name="min-price" min="0" max="9000" step="100" placeholder="от" value="0"><span>от</span></label>
-                <label><input class="filter-price-input filter-price-input-max" type="number" name="max-price" min="0" max="30000" step="100" placeholder="до" value="9000"><span>до</span></label>
-                </div>
+              <div class="slider-container">
+                <fieldset class="filter-price-slider">
+                  <legend class="filter-title">Стоимость, ₽:</legend>
+                  <div class="margin-container">
+                  <label><input class="filter-price-input filter-price-input-min" type="number" name="min-price" min="0" max="9000" step="100" placeholder="от" value="0"><span>от</span></label>
+                  <label><input class="filter-price-input filter-price-input-max" type="number" name="max-price" min="0" max="30000" step="100" placeholder="до" value="9000"><span>до</span></label>
+              </div>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="right:60px; width:226px">
@@ -104,7 +107,7 @@
                 <button type="submit" class="button button-add button-add-form">Применить</button>
                 <button type="reset" class="button button-reset">Сбросить</button>
               </div>
-              </form>
+            </form>
             </div>
         </div>
       </section>
@@ -261,7 +264,7 @@
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <span class="visually-hidden">Ввод адреса электронного почтового ящика</span>
-        <input type="email" name="e-mail adress" placeholder="Ваш e-mail">
+        <input type="email" name="e-mail adress" placeholder="Ваш e-mail" required>
         <button type="submit" class="button button-subscribe">Подписаться</button>
       </form>
     </section>

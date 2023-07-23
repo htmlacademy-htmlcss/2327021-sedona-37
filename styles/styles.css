@@ -110,7 +110,7 @@ text-decoration: none;
     color: #000000;
 }
 
-.navigation-link--active {
+.navigation-link-active {
   border-bottom: 2px solid #756257;
 }
 
@@ -261,7 +261,7 @@ margin-bottom: 30px;
 
 .subscribe-white {
   background-color: blue ;
-  background-image: url(../img/Subscribe-back.jpg);
+  background-image: url(../img/subscribe-back.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 415px;
@@ -367,7 +367,8 @@ cursor: pointer;
   cursor: pointer;
   }
 
-.breadcrumbs-item:not(:last-child)::after {
+.breadcrumbs-item::after {
+  display: flex;
   content: "";
   display: inline-block;
   width: 7px;
@@ -378,8 +379,8 @@ cursor: pointer;
   background-size: cover;
 }
 
-.breadcrumbs-item {
-  display: flex;
+.breadcrumbs-item:last-child::after {
+content: none;
 }
 
 .breadcrumbs-item-home  {
@@ -510,6 +511,7 @@ text-transform: capitalize;
 
  .button-add-form {
   padding: 8px 50px;
+  max-width: 191px;
  }
 
  .range-scale {
@@ -620,6 +622,7 @@ background-image: url(../img/icons/tick.svg);
   min-height: 36px;
   border: none;
   cursor: pointer;
+  max-width: 191px;
  }
 
 .filter-button-apply {
@@ -662,6 +665,7 @@ background-image: url(../img/icons/tick.svg);
 .hotels-photo {
   min-height: 212px;
   grid-column: 2 span;
+  object-fit: cover;
 }
 
 .rating-total {
@@ -671,6 +675,15 @@ background-image: url(../img/icons/tick.svg);
   text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
+  font-style: normal;
+}
+
+.rating-total b {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .pagination-list {
@@ -689,8 +702,8 @@ background-image: url(../img/icons/tick.svg);
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 12px;
   color: #ffffff;
   background-color: #82B3D3;
@@ -698,7 +711,7 @@ background-image: url(../img/icons/tick.svg);
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
-  min-height: 60px;
+
 }
 
 .pagination-link-current {
@@ -815,7 +828,7 @@ li .advatnages-titles::after {
 }
 
 .welcome .subtitle {
-  max-width: 620px;
+  max-width: 640px;
   margin-bottom: 25px;
 }
 
@@ -826,12 +839,12 @@ li .advatnages-titles::after {
 
 .advantages-image {
   display:block;
+  object-fit: cover;
 }
 
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(3, 385px);
   text-align: center;
   box-sizing: border-box;
 }
@@ -841,8 +854,9 @@ li .advatnages-titles::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 85px;
+  padding: 103px 85px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .advantages-item:nth-child(2), .advantages-item:nth-child(6) {
@@ -959,6 +973,7 @@ li .advatnages-titles::after {
 .tel {
   padding: 5px 10px;
   margin: 0;
+  max-width: 700px;
 }
 
 
@@ -975,8 +990,10 @@ li .advatnages-titles::after {
 
 .sort-button-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 300px;
 }
 
 .hotels-sort, .hotels-choice {
@@ -999,6 +1016,12 @@ li .advatnages-titles::after {
   -moz-appearance: none;
        appearance: none;
   cursor: pointer;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
 }
 
 .select-sorting:hover {
@@ -1263,6 +1286,17 @@ margin-bottom: 64px;
   text-transform: capitalize;
 }
 
+.info-icon::after {
+  content: url(../img/icons/icon-info.svg);
+  width: 2px;
+  height: 12px;
+  display:block;
+  margin: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 46%;
+}
+
 .modal-registration-people-list {
   display: flex;
   justify-content: space-between;
@@ -1284,6 +1318,7 @@ margin-bottom: 64px;
 
 .modal-amount-button {
   display: flex;
+  position: relative;
   width: 40px;
   height: 48px;
   padding: 14px 10px;
@@ -1293,6 +1328,25 @@ margin-bottom: 64px;
   border: none;
   border-radius: 0;
 }
+
+.button-minus::after {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.30);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.button-plus::after {
+  content: url(../img/icons/plus.svg);
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
 
 .modal-amount-input::-webkit-outer-spin-button,
 .modal-amount-input::-webkit-inner-spin-button {
@@ -1320,15 +1374,6 @@ background-color: #F2F2F2;
 
 .amount-registration-item label {
   margin-right: 48px;
-}
-
-.nfo-icon::after {
-  background-image: url(../img/icons/icon-info.svg);
-  width: 2px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000000;
 }
 
 .amount-registration-item b {
