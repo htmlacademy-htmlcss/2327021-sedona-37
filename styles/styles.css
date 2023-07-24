@@ -320,7 +320,6 @@ margin-bottom: 30px;
 .filter-price {
   background-color: blue ;
   background-image: url(../img/filter-hotels-sedona.jpg);
-  background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 412px;
   padding: 35px 70px;
@@ -645,11 +644,21 @@ background-image: url(../img/icons/tick.svg);
   cursor: pointer;
 }
 
+.layout-icons:hover {
+  border-color: #000000;
+}
+
+.layout-icons:focus {
+  outline: 2px solid #82B3D3;
+}
+
 .layout-icons-active {
   border-color: #000000;
 }
 
-
+.layout-icons:active {
+  border-color: #000000;
+}
 
 .hotels-title {
   margin-top: 0;
@@ -711,7 +720,19 @@ background-image: url(../img/icons/tick.svg);
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
+}
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+ background-color: #68A2CA;
+}
+
+.pagination-link:active {
+ color: rgba(255, 255, 255, 0.3);
+ background-color: #82B3D3;
 }
 
 .pagination-link-current {
@@ -719,7 +740,12 @@ background-image: url(../img/icons/tick.svg);
   background-color: #F2F2F2;
 }
 
-
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
+}
 
 li .advatnages-titles::after {
   content: '';
@@ -966,6 +992,18 @@ li .advatnages-titles::after {
   padding: 10px
 }
 
+.footer-vk-icon,
+.footer-tg-icon,
+.footer-yt-icon {
+  width: 24px;
+  height: 11px;
+  fill: #82B3D3;
+}
+
+.footer-academy-icon {
+  width: 115px;
+  height: 33px;
+}
 
 
 
@@ -1386,4 +1424,34 @@ background-color: #F2F2F2;
   border-radius: 50%;
   background-position: 50% 50%;
   margin-left: 10px;
+}
+
+.tooltip-text {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  min-width: 256px;
+  padding: 15px 18px 18px 22px;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+  box-sizing: border-box;
+ /* display: none; */
+}
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-top: 84px;
+  margin-left: -55px;
+}
+
+.info-icon::after:hover + .tooltip-text,
+.info-icon::after:focus + .tooltip-text {
+  display: block;
 }
