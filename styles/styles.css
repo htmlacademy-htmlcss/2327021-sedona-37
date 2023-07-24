@@ -95,7 +95,7 @@ text-decoration: none;
   color: #000000;
 }
 
-.navigation a:link {
+.navigation-list a:link {
   color:#000000;
 }
 
@@ -1556,4 +1556,5 @@ background-color: #F2F2F2;
 
 .go-to-modal {
 text-decoration: none;
+color: #FFFFFF;
 }
